@@ -1,0 +1,14 @@
+{
+  "name": "bullet-chat",
+  "version": "1.0.0",
+  "description": "AI Prompt Shortcuts for LLMs",
+  "scripts": {
+    "build": "tsc && node scripts/bundle.js && node scripts/bundle-popup.js && node scripts/copy-assets.js",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.254",
+    "esbuild": "^0.19.11",
+    "typescript": "^5.3.3"
+  }
+}

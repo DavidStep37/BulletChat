@@ -1,0 +1,80 @@
+/* Suggestion bar: lightweight and non-invasive. */
+.csp-root {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  grid-column: 1 / -1;
+}
+
+.csp-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.3;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.csp-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.csp-btn:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.csp-root[data-csp-site="gemini"] {
+  padding-top: 0;
+}
+
+.csp-root[data-csp-site="gemini"] .csp-btn {
+  border-radius: 9999px;
+}
+
+.csp-root[data-csp-site="qianwen"] {
+  padding: 12px 0 8px;
+}
+
+.csp-root[data-csp-site="qianwen"] .csp-btn {
+  border-radius: 9999px;
+}
+
+.csp-root[data-csp-site="doubao"] {
+  padding-top: 0;
+}
+
+.csp-root[data-csp-site="kimi"] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csp-root[data-csp-site="kimi"] .csp-btn {
+  border-radius: 9999px;
+}
+
+.csp-root[data-csp-theme="dark"] .csp-btn {
+  background: rgba(60, 60, 60, 0.9);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e0e0e0;
+}
+
+.csp-root[data-csp-theme="dark"] .csp-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.csp-root[data-csp-theme="dark"] .csp-btn:active {
+  background: rgba(255, 255, 255, 0.15);
+}

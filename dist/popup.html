@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BulletChat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-shell">
+    <div class="popup">
+      <header class="popup-header">
+        <span class="popup-title">预设 Prompt</span>
+        <span class="popup-subtitle">在输入框旁显示的快捷按钮</span>
+      </header>
+      <div class="popup-list-wrap" id="listWrap">
+        <div class="popup-empty" id="emptyState">点击“新增”创建快捷prompt</div>
+        <div class="popup-list" id="list"></div>
+      </div>
+      <div class="popup-actions">
+        <button type="button" class="popup-add" id="addBtn">
+          <span class="popup-add-icon">+</span>
+          <span>新增一条</span>
+        </button>
+        <span class="popup-hint" id="hint" aria-live="polite"></span>
+        <button type="button" class="popup-save" id="saveBtn">保存</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
