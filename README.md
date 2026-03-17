@@ -4,6 +4,8 @@ AI Prompt Shortcuts for LLMs
 
 BulletChat is a Chrome extension built with Manifest V3. It adds a row of prompt shortcut buttons next to the chat input on supported LLM websites, so you can insert reusable prompts with one click.
 
+![BulletChat 快捷按钮示意](assets/screenshot.png)
+
 ## Features
 
 - Adds one-click prompt shortcut buttons next to the chat input.
